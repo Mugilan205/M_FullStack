@@ -1,0 +1,57 @@
+.flexcont{
+    display: flex ;
+    flex-direction: row ;
+    gap : 10px ;
+    
+} 
+.flexitems{
+    display: flexbox;
+    background-color: brown;
+    margin-top: 20px ;
+    gap: 10px ;
+    height: 40px;
+    width : 40px;
+    justify-content: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: [col1] 100px [col2] 100px [col3] 100px [col4] 100px ;
+    grid-template-rows: [row1] 100px [row2] 100px [row3] 100px [row4] 100px ;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+span{
+    display: grid;
+    background-color: blue;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.first {
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+.five{
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+.four{
+   grid-column: col1/col3;
+   grid-row: row1/row3;
+    
+}
+:root {
+    --main_color : rgb(147, 147, 231) ; 
+    --sub_color : rgb(243, 123, 123) ; 
+}
+.grid_2 span {
+    background-color: var(--main_color);
+}
+
+@media only screen and (max-width:455px){
+    .grid_2 span {
+        background-color: var(--sub_color);
+    }
+}
