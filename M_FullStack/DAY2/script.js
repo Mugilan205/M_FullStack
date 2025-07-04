@@ -50,5 +50,6 @@ function clc(n1, n2) {
 }
 let sum = clc(5, 10); 
 display(sum); 
- */
+*/
+
 
